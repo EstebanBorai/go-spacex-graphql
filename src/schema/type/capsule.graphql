@@ -1,0 +1,12 @@
+type Capsule {
+	CapsuleSerial: String!
+	CapsuleID: String!
+	Status: String!
+	OriginalLaunch: Time!
+	OriginalLaunchUnix: Int!
+	Missions: [Mission]!
+	Landings: Int!
+	Type: String!
+	Details: String
+	ReuseCount: Int
+}

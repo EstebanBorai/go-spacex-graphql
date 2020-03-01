@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "e0f237a5-fa35-4e0a-8a0d-ece99fdbba12",
+		"name": "Go SpaceX GraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Capsule",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n    capsule {\n        CapsuleSerial\n        CapsuleID\n        Status\n        OriginalLaunch\n        OriginalLaunchUnix\n        Missions {\n            MissionName\n            MissionID\n            Manufacturers\n            PayloadIDs\n            Wikipedia\n            Website\n            Twitter\n            Description\n        }\n        Landings\n        Type\n        Details\n        ReuseCount\n    }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/query",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"query"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

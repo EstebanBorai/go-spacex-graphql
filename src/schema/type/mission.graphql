@@ -1,0 +1,10 @@
+type Mission {
+	MissionName: String!
+	MissionID: String!
+	Manufacturers: [String]!
+	PayloadIDs: [String]!
+	Wikipedia: String
+	Website: String
+	Twitter: String
+	Description: String
+}
